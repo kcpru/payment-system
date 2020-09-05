@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.{{tag}}`
+const Container = styled.div`
   //
 `;
 
-const {{name}} = () => {
+const Card = () => {
   return <Container></Container>;
 };
 
-export default {{name}};
+export default Card;

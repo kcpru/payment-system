@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.{{tag}}`
+const Container = styled.button`
   //
 `;
 
-const {{name}} = () => {
+const Button = () => {
   return <Container></Container>;
 };
 
-export default {{name}};
+export default Button;

@@ -1,28 +1,28 @@
 module.exports = function (plop) {
-  plop.setGenerator("component", {
-    description: "React component using Typescript",
+  plop.setGenerator('component', {
+    description: 'React component using Typescript',
     prompts: [
       {
-        type: "input",
-        name: "name",
-        message: "Name: ",
+        type: 'input',
+        name: 'name',
+        message: 'Name: ',
       },
       {
-        type: "input",
-        name: "type",
-        message: "DOM API Type: ",
-      },
-      {
-        type: "input",
-        name: "tag",
-        message: "Tag name: ",
+        type: 'input',
+        name: 'tag',
+        message: 'Tag name: ',
       },
     ],
     actions: [
       {
-        type: "addMany",
-        destination: "src/components/{{name}}",
-        templateFiles: "plop_templates/component/*.hbs",
+        type: 'addMany',
+        destination: 'src/components/{{name}}',
+        templateFiles: 'plop_templates/component/*.hbs',
+      },
+      {
+        type: 'append',
+        path: 'src/components/index.ts',
+        templateFile: 'plop_templates/export/export.hbs',
       },
     ],
   });
