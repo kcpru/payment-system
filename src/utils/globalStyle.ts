@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../assets/background.png';
+import background from '../assets/background.svg';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -8,5 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    
+    * {
+      font-family: Montserrat;
+    }
   }
 `;
