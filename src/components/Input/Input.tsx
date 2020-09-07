@@ -11,6 +11,7 @@ const Input = styled.input`
   border: none;
   font-weight: bold;
   box-shadow: 0 1rem 3rem -1.5rem #00000090;
+  letter-spacing: 6px;
 
   &:focus {
     outline: none;
