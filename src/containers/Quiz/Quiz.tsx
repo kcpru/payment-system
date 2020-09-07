@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useParams } from 'react-router-dom';
 
 const Container = styled.div`
   width: 40rem;
@@ -13,9 +12,24 @@ const Container = styled.div`
   box-shadow: 0 1rem 3rem -1.5rem #00000090;
 `;
 
-const Quiz: React.FC = () => {
-  let { id } = useParams();
-  return <Container>{id}</Container>;
+type ValueType = {
+   amount: number;
+}
+
+type Props = {
+   value: ValueType;
+};
+
+const Quiz: React.FC<Props> = ({ value }) => {
+  const { amount } = value;
+
+  return (
+    <Container>
+      <ul>
+        <li>{amount} zł</li>
+      </ul>
+    </Container>
+  );
 };
 
 export default Quiz;

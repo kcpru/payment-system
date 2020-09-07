@@ -4,6 +4,7 @@ import { Main } from '../containers';
 import { Logo } from '../components';
 
 const Pay: React.FC = () => {
+
   return (
     <div>
       <Logo />
