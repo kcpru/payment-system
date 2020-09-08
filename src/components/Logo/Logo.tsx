@@ -12,17 +12,18 @@ const Span = styled.span`
 
   &::after {
     position: absolute;
-    content: 'P';
+    content: 'PAY';
     display: inline-block;
     left: 7px;
     color: #dd4d8c;
+    z-index: -1;
   }
 `;
 
 const Logo = () => {
   return (
     <Container>
-      DRO<Span>P</Span>AY
+      DRO<Span>P</Span>
     </Container>
   );
 };

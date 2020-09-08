@@ -35,10 +35,10 @@ const Main = () => {
   let { id } = useParams();
   const [value, loading, error] = useObject(base.ref(id));
   console.log(value?.val());
-
+  
   return (
     <Container>
-      {value && value?.val()?.amount && <Quiz value={value.val()} />}
+      {value && <Quiz value={value.val()} />}
       {loading && <AnimationAiOutlineLoading />}
       {(error || !value?.val()?.amount) && !loading && (
         <h1 style={{ fontSize: '4rem', position: 'absolute' }}>Błąd</h1>
